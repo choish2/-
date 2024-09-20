@@ -1,0 +1,659 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>소현마을</title>
+
+        <link rel="stylesheet" href="css/hos.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     
+        
+        <style>
+            body.off {overflow: hidden; } /* 초기 오버플로우 숨김 */
+            #wrap {position: fixed;}
+            section {width: 100vw; position: fixed; top: 0; left: 0; z-index: -1;}
+            section .section0 {position: absolute; left: 0;}
+            section .section1 {width: 100vw; height: 100vh; float: left; box-sizing: border-box;}
+            section .section4,
+            section .section3,
+            section .section2 {width: 100vw; height: 100vh; float: left; box-sizing: border-box; }
+            section .section3 #spline,
+            section .section2 #spline {width: 100vw; height: 100vh; border: 1px solid #000; }
+            
+            .loading {position: fixed; width: 100%; height: 100vh; z-index: 7; background: #fff; display: flex; justify-content: center; align-items: center; font-size: 50px;}
+            .loading span {animation: load 0.3s infinite;}
+            @keyframes load {
+                0% {opacity: 1;}
+                50% {opacity: 0.5;}
+                100% {opacity: 1;}
+            }
+            .loading span:nth-child(1){animation-delay: 0.1s;}
+            .loading span:nth-child(2){animation-delay: 0.2s;}
+            .loading span:nth-child(3){animation-delay: 0.3s;}
+            .loading span:nth-child(4){animation-delay: 0.4s;}
+            .loading span:nth-child(5){animation-delay: 0.5s;}
+            .loading span:nth-child(6){animation-delay: 0.6s;}
+            .loading span:nth-child(7){animation-delay: 0.7s;}
+            .loading span:nth-child(8){animation-delay: 0.8s;}
+            .loading span:nth-child(9){animation-delay: 0.9s;}
+        </style>
+    </head>
+
+    <body class="off">
+
+    <div class="loading">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+    </div>
+
+   
+    </div>
+    <div id="intro">
+        <ul class="text_box">
+            <li>
+                <ul class="int">
+                    <li class="h2">최소현</li>
+                    <li>1998.02.22</li>
+                    <li class="sk">skill
+                        <span><img src="img/pslogo.png" alt=""></span>
+                        <span><img src="img/logo_2.svg" alt=""></span>
+                        <span><img src="img/logo_3.png" alt=""></span>
+                        <span><img src="img/logo_4.svg" alt=""></span>
+                        <span><img src="img/logo_5.png" alt=""></span>
+                        <span><img src="img/logo_6.webp" alt=""></span>
+                        <span><img src="img/logo_7.png" alt=""></span>
+                    </li>
+                    <li>tel 010-6483-3487</li>
+                    <li>e-mail dkdld550@naver.com</li>
+                    <li class="butttn">
+                        <a href="#"><img src="img/icon1.png" alt="go-home"></a>
+                        <a href="mailto:dkdld550@naver.com?subject=안녕하세요&body=이메일 본문입니다."><img src="img/icon2.png" alt="mail"></a>
+                        <a href="https://open.kakao.com/me/town_sh" target="_blank"><img src="img/icon3.svg" alt="kakaotalk_link"></a>
+
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="img_box"><img src="img/lego.png" alt=""></li>
+        
+        </ul>
+      
+    </div>
+    <div class="helpp">
+        
+        <div>
+            <h2>Q.어디를 눌러야 할 지 모르겠어요</h2>
+            <p>문 , 컴퓨터 , 액자 , 서랍장등을 클릭해보세요.</p>
+        </div>
+        <div>
+            <h2>Q.'여기를 눌러보세요'버튼이 사라졌어요</h2>
+            <p>상단 좌측의 Home버튼을 누르면 다시 생성됩니다.</p>
+        </div>
+        <span class="btnn"><a href="#">닫기</a></span>
+    </div>
+    
+
+    <div id="wrap">
+        <header>
+            <div class="topmenu">
+                <ul class="top_box">
+                    <li class="gohome"><a href="#section1">Home</a></li>
+                    <li class="profile"><a href="#">Contact</a></li>
+                    <li class="help"><a href="#">Help</a></li>
+                    
+                </ul>
+            </div>
+        </header>
+
+        <section>
+            <div class="section0 section1" id="spline1">
+                <!-- spline-viewer 로드될 위치 -->
+                <div id="clickme">
+                    <ul class="library">
+                        <a href="#section2">여기를<br>클릭해보세요!</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="section0 section2" id="spline2">
+                <!-- spline-viewer 로드될 위치 -->
+                <ul class="spline_btn">
+                    <li class="sp1">
+
+                    </li>
+                    <li class="sp2">
+                    </li>
+                    <li class="sp3"><a href="#"></a></li>
+                   
+                </ul>
+                <ul class="clickframe">
+                    <div class="popuplist">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide swiper2222">
+                                <img src="img/popup/banner5.png" alt="">
+                                <div class="text_box"></div>  
+                            </div>
+                              <div class="swiper-slide swiper2222">
+                                <img src="img/popup/banner2.png" alt="">
+                                <div class="text_box"></div>  
+                            </div>
+                              <div class="swiper-slide swiper2222">
+                                <img src="img/popup/banner3.png" alt="">
+                                <div class="text_box"></div>  
+                            </div>
+                              <div class="swiper-slide swiper2222">
+                                <img src="img/popup/banner4.png" alt="">
+                                <div class="text_box"></div>  
+                            </div>
+                              <div class="swiper-slide swiper2222">
+                                <img src="img/popup/banner1.png" alt="">
+                                <div class="text_box"></div>  
+                            </div>
+                            <div class="swiper-slide swiper2222">
+                                <img src="img/popup/banner6.png" alt="">
+                                <div class="text_box"></div>  
+                            </div>
+                            <div class="swiper-slide swiper2222">
+                                <img src="img/popup/banner7.png" alt="">
+                                <div class="text_box"></div>  
+                            </div>
+                                </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        
+                            <div class="swiper-pagination"></div>
+                          </div>
+                        </div>
+                        <div class="bannerlist">
+                            <ul class="banner">
+                                <li><img src="img/banner/banner1.png" alt=""></li>
+                                <li><img src="img/banner/banner2.png" alt=""></li>
+                                <li><img src="img/banner/banner3.png" alt=""></li>
+                                <li><img src="img/banner/banner4.png" alt=""></li>
+                                <li><img src="img/banner/banner5.png" alt=""></li>
+                                <li><img src="img/banner/banner6.png" alt=""></li>
+                                <li><img src="img/banner/banner7.png" alt=""></li>
+                                <li><img src="img/banner/banner8.png" alt=""></li> 
+                            </ul>
+                        </div>
+                        <li class="btnn">
+                            <a href="#">
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+                            </a>
+                        </li>
+                        <li class="btn2">
+                            <a class="pop" href="#">POPUP</a>
+                            <a class="banner" href="#">BANNER</a>
+                        </li>
+                </ul>
+            </div>
+           
+            <div class="section0 section3" id="spline3">
+                <!-- spline-viewer 로드될 위치 -->
+                 <ul class="spline_btn2">
+                    
+                    <li class="sp3_1">
+                        <figure>
+                            <img src="img/web_1.png" alt="">
+                        </figure>   
+                    </li>
+                    <li class="sp3_2">
+                        
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/나이키.png" alt=""></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>나이키</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p>운동선수들을 위한 스포츠 기업이라는 점에서 착안하여 
+                                            액티브하고 자유로운 느낌으로 리디자인 해 보았습니다.
+                                        </p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/logo_3.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/nike/">링크바로가기</a></p>
+                                    </li>
+                                        
+                                </ul>
+                              </div>
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/닥터지_1.jpeg" alt=""></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>닥터지</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p>피부과에서 시작된 브랜드이므로 편안하고 
+                                            믿을 수 있는 이미지를 심기위해 주색을 
+                                            푸른빛이 도는 초록색과 갈색으로 선정하였으며 여백을 넉넉히 잡아 
+                                            보는이의 편의성을 높였습니다.
+                                            
+                                        </p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/logo_3.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/Dr.g/">링크바로가기</a></p>
+                                    </li>
+                                        
+                                </ul>
+                              </div>
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/리더스동물의료원.jpeg" alt=""></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>리더스동물의료원</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p>운동선수들을 위한 스포츠 기업이라는 점에서 착안하여 
+                                            액티브하고 자유로운 느낌으로 리디자인 해 보았습니다.
+                                        </p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/logo_3.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/hosp/">링크바로가기</a></p>
+                                    </li>
+                                        
+                                </ul>
+                              </div>
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/알레르망_1.jpeg" alt=""></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>알레르망</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p>알레르망은 2000년 국내 최초로 유일하게 ​알레르기 방지 원단의 실용신안을 획득하였습니다.​ 그 점을 한눈에 보기 쉽게 
+                                        메인 영상으로 삽입해 보았고 깔끔한 느낌을 살려 리디자인 했습니다. 
+                                        </p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/logo_3.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/allerman/index.html">링크바로가기</a></p>
+                                    </li>
+                                        
+                                </ul>
+                              </div>
+                              
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/연합뉴스_1.jpeg" alt=""></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>연합뉴스</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p>배너의 숫자를 줄이고 정렬을 중앙으로 하여 
+                                            가독성을 높여보았습니다.
+                                        </p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/logo_3.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/news/index.html">링크바로가기</a></p>
+                                    </li>
+                                        
+                                </ul>
+                              </div>
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/인현수라간.jpeg" alt=""></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>인현수라간</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p>기존 웹사이트의 여백 교정, 상품이 좀더 보일 수 있게끔 구간을 나누어 보았습니다.</p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/logo_3.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/inhyeon/">링크바로가기</a>
+                                        <a href="https://choish2.github.io/inhyeon/">상세페이지</a>
+                                        </p>
+                                    </li>
+                                        
+                                </ul>
+                              </div>
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/크몽_1.jpeg" alt=""></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>크몽</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p>주색을 사용하여 사이트 특유의 느낌은 살리면서도 
+                                            미니멀하게 리디자인 해 보았습니다. 
+                                        </p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/logo_3.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/momm/">링크바로가기</a></p>
+                                    </li>
+                                        
+                                </ul>
+                              </div>
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/티파이_2.jpeg" alt=""></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>케이스티파이</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p> 메인에는 제품컷, 하단에는 사용자 리뷰를 배치하여 콜라보를 많이하는점을 살려 바로 갈 수 있는 버튼을 배치 해 보았습니다. 
+                                        </p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/pslogo.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/casetify/index.html">링크바로가기</a></p>
+                                    </li>
+                                        
+                                </ul>
+                               
+                              </div>
+                              <div class="swiper-slide">
+                                <ul class="cont_box">
+                            
+                                    <li class="scrollbox">
+                                        <a href="#"><img src="img/웹/aesop.jpeg"></a>
+                                    </li>
+                                    <li class="text_box">
+                                        <h4>이솝</h4>
+                                        <p class="h5">Design-Focus</p>
+                                        <p>기존 사이트의 과한부분은 빼고 , 
+                                            특색이 드러나면서도 깔끔하게 제작해보았습니다.
+                                        </p>
+                                        <p class="h5">Use-tool</p>
+                                        <p class="logo_box">
+                                            <img src="img/pslogo.png" alt="">
+                                            <img src="img/logo_5.png" alt="">
+                                            <img src="img/logo_6.webp" alt="">
+                                        </p>
+        
+                                        <p class="btn_box"><a href="https://choish2.github.io/aesop/">링크바로가기</a></p>
+                                    </li>
+                                        
+                                </ul>
+                               
+                              </div>
+                                </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                          </div>
+                            <div class="exit">
+                                <a href="#"></a>
+                            </div>
+                            <div class="web">
+                                <a href="#"></a>
+                            </div>
+                            
+                        </li>
+                 </ul>
+                 <ul class="spline_btn3 bannertab">
+                    
+                    <li class="sp3_1">
+                        <figure>
+                            <img src="img/web_2.png" alt="">
+                        </figure>   
+                    </li>
+                    <li class="sp3_2">
+                        <h2>
+                            <span class="search_box">
+                                <p>
+                                    <span class="material-symbols-outlined">
+                                    arrow_back
+                                    </span>
+                                </p>
+                                <p class="next">
+                                    <span class="material-symbols-outlined">
+                                        arrow_forward
+                                        </span>
+                                </p>
+                                <p>
+                                    <span class="material-symbols-outlined">
+                                        refresh
+                                        </span>
+
+                                </p>
+                                <input type="text">
+                                <p>
+                                    <span class="material-symbols-outlined">
+                                        star
+                                        </span>
+                                </p>
+                                <p>
+                                    <span class="material-symbols-outlined">
+                                        account_circle
+                                        </span>
+                                </p>
+                                <p>
+                                    <span class="material-symbols-outlined">
+                                        more_vert
+                                        </span>
+                                </p>
+                            </span>
+                                 
+                               
+                             
+                        </h2>
+                       
+                          <div class="exit">
+                            <a href="#"></a>
+                          </div>
+                    </li>
+                 </ul>
+                 <ul class="signin">
+                    <li><a href="#"></a> </li>
+                 </ul>
+                 <ul class="nextt">
+                    <li><a href="#"></a> </li>
+                 </ul>
+                 
+            </div>
+        
+        </section>
+    </div>
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/pot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.loading').stop().fadeOut(2000, function(){
+                // $('body').removeClass('off');
+                $('.section0').css({position:'relative'})
+            });
+
+            $('#clickme').click(function(){
+                $('section').animate({left:-winW});
+            
+            })
+        
+
+
+            let winW = $(window).outerWidth(true);
+            let winH = $(window).height();
+            let sectionLength = $('.section0').length;
+            
+            $('body').height(winW + winH);
+            $('section').width(winW * sectionLength * 3)
+
+            $(window).scroll(function(){
+                let winScr = $(window).scrollTop();
+                $('section').css({left:-winScr});
+                console.log(winScr);
+
+                return false;
+            });
+
+            $('#clickme .library').click(function(){
+                $('#clickme').css('display','none')
+            })
+
+            
+                $('.gohome').click(function(e){
+                    e.preventDefault();
+                    $('section').animate({left:0})
+                    $('#clickme').css('display', 'block');
+            })
+            $('.sp3 a').click(function(){
+                $('section').animate({left:-winW * 2 });
+            
+                return false;
+            })
+         
+
+        });
+        
+        
+        
+    </script>
+
+    <script>
+        // Intersection Observer를 사용하여 스플라인 로드 최적화
+        document.addEventListener("DOMContentLoaded", function () {
+            const options = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.1
+            };
+        
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.id === 'spline1') {
+                            const splineViewer1 = document.createElement('script');
+                            splineViewer1.type = "module";
+                            splineViewer1.src = "https://unpkg.com/@splinetool/viewer@1.9.25/build/spline-viewer.js"    ;
+                            document.body.appendChild(splineViewer1);
+
+                            const splineElement1 = document.createElement('spline-viewer');
+                            splineElement1.setAttribute('url', "https://prod.spline.design/sN8s2KzZnFltDfkk/scene.splinecode");
+
+                            
+                            entry.target.appendChild(splineElement1);
+                        }
+                        
+                        if (entry.target.id === 'spline2') {
+                            const splineViewer2 = document.createElement('script');
+                            splineViewer2.type = "module";
+                            splineViewer2.src = "https://unpkg.com/@splinetool/viewer@1.9.23/build/spline-viewer.js";
+                            document.body.appendChild(splineViewer2);
+
+                            const splineElement2 = document.createElement('spline-viewer');
+                            splineElement2.setAttribute('url', "https://prod.spline.design/ovCvCTzlJ9YbcsFo/scene.splinecode");
+                            entry.target.appendChild(splineElement2);
+                        }
+
+                        if (entry.target.id === 'spline3') {
+                            const splineViewer3 = document.createElement('script');
+                            splineViewer3.type = "module";
+                            splineViewer3.src =  "https://unpkg.com/@splinetool/viewer@1.9.25/build/spline-viewer.js";
+                            document.body.appendChild(splineViewer3);
+
+                            const splineElement3 = document.createElement('spline-viewer');
+                            splineElement3.setAttribute('url', "https://prod.spline.design/5YKz7QJVEHDNkTFj/scene.splinecode"   );
+
+
+                            entry.target.appendChild(splineElement3);
+                        }
+                         
+                       
+                        observer.unobserve(entry.target);
+                    }
+                    
+                });
+            }, options);
+
+            const targets = document.querySelectorAll('#spline1, #spline2, #spline3, #spline4');
+            targets.forEach(target => observer.observe(target));
+        });
+    </script>
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          keyboard: {
+            enabled: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script> 
+
+
+        <script>
+            var swiper = new Swiper(".mySwiper2", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </body>
+    </html>
